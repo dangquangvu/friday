@@ -1,0 +1,54 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "blogCategory": "Technology",
+      "blogTitle": "Nodejs là gì",
+      "slug": "what-is-nodejs",
+      "postedOn": "Dec 02, 2020",
+      "author": "Vu dang",
+      "blogImage": "nodejs.png",
+      "blogText": "NodeJS là gì?NodeJS là một nền tảng được xây dựng trên V8 JavaScript Engine – trình thông dịch thực thi mã JavaScript, giúp xây dựng các ứng dụng web một cách đơn giản và dễ dàng mở rộng.NodeJS được phát triển bởi Ryan Dahl vào năm 2009 và có thể chạy trên nhiều hệ điều hành khác nhau: OS X, Microsoft Windows, Linux.Lý do nên học NodeJS là gì? NodeJS được viết bằng JavaScript với cộng đồng người dùng lớn mạnh. Nếu bạn cần hỗ trợ gì về NodeJS, sẽ nhanh chóng có người hỗ trợ bạn.\n\nTốc độ xử lý nhanh. Nhờ cơ chế xử lý bất đồng độ (non-blocking), NodeJS có thể xử lý hàng ngàn kết nối cùng lúc mà không gặp bất cứ khó khăn nào.\n\nDễ dàng mở rộng. Nếu bạn có nhu cầu phát triển website thì tính năng dễ dàng mở rộng của NodeJS là một lợi thế cực kỳ quan trọng."
+    },
+    {
+      "id": 2,
+      "blogCategory": "Technology",
+      "blogTitle": "Javascript là gì?",
+      "slug": "What-is-js?",
+      "postedOn": "Dec 02, 2020",
+      "author": "Vu dang",
+      "blogImage": "javascript-5.png",
+      "blogText": "JavaScript là ngôn ngữ lập trình phổ biến nhất trên thế giới trong suốt 20 năm qua. Nó cũng là một trong số 3 ngôn ngữ chính của lập trình web:\nHTML: Giúp bạn thêm nội dung cho trang web.\nCSS: Định dạng thiết kế, bố cục, phong cách, canh lề của trang web.\nJavaScript: Cải thiện cách hoạt động của trang web.\n"
+    },
+    {
+      "id": 3,
+      "blogCategory": "GoldPrice",
+      "blogTitle": "Giá vàng trong nước tăng mạnh, cao hơn thế giới gần 4 triệu đồng/lượng",
+      "slug": "gold-price?",
+      "postedOn": "Dec 02, 2020",
+      "author": "Vu dang",
+      "blogImage": "gold.webp",
+      "blogText": "Mở cửa sáng nay, Công ty Vàng bạc Đá quý Sài Gòn niêm yết giá vàng SJC tại thị trường Hà Nội ở mức 54,75 - 55,27 triệu đồng/lượng (mua vào - bán ra), tăng 300 nghìn đồng/lượng ở chiều mua vào và 200 nghìn đồng/lượng ở chiều bán ra so với cuối ngày hôm qua.Tại Tập đoàn Vàng bạc Phú Quý, giá vàng SJC cũng được điều chỉnh tăng 150 nghìn đồng/lượng ở chiều mua vào và 100 nghìn đồng/lượng ở chiều bán ra so với giá đóng cửa hôm qua, niêm yết ở mức 54,7 - 55,2 triệu đồng/lượng (mua vào - bán ra).Trong phiên giao dịch ngày 10/12, giá vàng thế giới tiếp tục giảm sau khi thất bại trong việc phá vỡ mức 1.850 USD/ounce đã thúc đẩy việc bán kỹ thuật, với tâm lý lạc quan về vaccine phòng ngừa dịch viêm đường hô hấp cấp COVID-19 khiến các nhà đầu tư số liệu việc làm yếu của Mỹ."
+    },
+    {
+      "id": 4,
+      "blogCategory": "FoodHeathy",
+      "blogTitle": "4 món ăn được mệnh danh là sát thủ gây sa sút trí tuệ, sinh bệnh Alzheimer, hầu hết đều là món khoái khẩu của giới trẻ",
+      "slug": "food-choose",
+      "postedOn": "Dec 02, 2020",
+      "author": "Vu dang",
+      "blogImage": "food.jpeg",
+      "blogText": "Sức khỏe của bạn là tấm gương phản chiếu những gì bạn ăn - câu nói này luôn đúng, và với sức khỏe não bộ thì thực phẩm cũng có mối liên quan tương tự. Một chế độ ăn uống bao gồm các loại rau lá xanh, các loại quả mọng, ngũ cốc nguyên hạt và cá được coi là chế độ ăn có thể ngừa nguy cơ mất trí nhớ. Ngược lại, nghiên cứu cho thấy những gì bạn ăn có thể là tăng nguy cơ mắc bệnh Alzheimer và các dạng sa sút trí tuệ khác.Bệnh Alzheimer là một trong các nguyên nhân dẫn đến chứng giảm trí nhớ, ảnh hưởng nghiêm trọng đến não bộ, khiến người bệnh gặp trở ngại trong sinh hoạt hàng ngày. Bên cạnh đó, bệnh còn gây tác động tiêu cực đến khả năng ngôn ngữ và tư duy. Hiện nay, vẫn chưa có phương pháp điều trị dứt điểm căn bệnh này vì vậy việc phòng tránh Alzheimer là vô cùng quan trọng. Dưới đây là 4 loại thực phẩm được công nhận có thể làm tăng Alzheimer mà bạn nên tránh dù đang ở bất kỳ độ tuổi nào."
+    },
+    {
+      "id": 5,
+      "blogCategory": "Sport",
+      "blogTitle": "Đoàn Văn Hậu điều trị thành công, nghỉ thi đấu khoảng 3 tháng",
+      "slug": "doan-van-hau-phau-thuat-thanh-cong-nghi-thi-dau-it-nhat-3-thang",
+      "postedOn": "Dec 02, 2020",
+      "author": "Vu dang",
+      "blogImage": "vanhau.jpg",
+      "blogText": "Đoàn Văn Hậu tái phát chấn thương ở buổi tập của CLB Hà Nội hôm 30/11. Thông báo của CLB Hà Nội cho biết anh bị tổn thương sụn chêm, phải nghỉ tập luyện và thi đấu khoảng 3 tháng. Tuy nhiên, sau khi xem xét và bàn bạc với Liên đoàn bóng đá Việt Nam, quyết định phẫu thuật cho Đoàn Văn Hậu đã được đưa ra. Đây là giải pháp tốt nhất để điều trị dứt điểm chấn thương cho hậu vệ sinh năm 1999.Ca phẫu thuật của Đoàn Văn Hậu đã được thực hiện thành công cách đây vài ngày tại TP.HCM. Bác sĩ phẫu thuật cho Văn Hậu cũng sẽ điều trị cho Hai Long, cầu thủ mới được phát hiện chấn thương tương tự khi tập luyện cùng đội tuyển Quốc gia.Với chấn thương sụn chêm, các cầu thủ cần ít nhất 3 tháng nghỉ ngơi và 1-2 tháng luyện tập trước khi trở lại sân cỏ. Như vậy, nhiều khả năng cả Hai Long và Văn Hậu sẽ bỏ lỡ lượt đi V.League 2021. Đây là thông tin rất vui với Than Quảng Ninh và CLB Hà Nội."
+    }
+  ]
+}

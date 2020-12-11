@@ -26,38 +26,21 @@ export class BlogController {
   @Get('')
   @HttpCode(HttpStatus.OK)
   @ApiOperation({ summary: 'get blogs' })
-  getBlog(@Query() filter: BlogFilter): Promise<any> {
-    return this.blogService.getBlog(filter);
+  getBlog(): Promise<any> {
+    return this.blogService.getBlog();
   }
 
   @Get(':id')
   @HttpCode(HttpStatus.OK)
   @ApiOperation({ summary: 'get details blog' })
-  getDetailBlog(@Param('id') id: string): Promise<any> {
+  getDetailBlog(@Param('id') id: number): Promise<any> {
     return this.blogService.getDetailBlog(id);
   }
 
-  @Post('')
+  @Post(':id')
   @HttpCode(HttpStatus.OK)
   @ApiOperation({ summary: 'create blog' })
-  postBlog(@Body() createBlog: CreateBlogDTO): Promise<any> {
-    return this.blogService.postBlog(createBlog);
-  }
-
-  @Put(':id')
-  @HttpCode(HttpStatus.OK)
-  @ApiOperation({ summary: 'update blog' })
-  updateBlog(
-    @Body() input: updateBlogDTO,
-    @Param('id') id: string,
-  ): Promise<any> {
-    return this.blogService.updateBlog(input, id);
-  }
-
-  @Delete(':id')
-  @HttpCode(HttpStatus.OK)
-  @ApiOperation({ summary: 'delete blog' })
-  deleteBlog(@Param('id') id: string): Promise<any> {
-    return this.blogService.deleteBlog(id);
+  postBlog(@Param('id') id: number): Promise<any> {
+    return this.blogService.postBlog(id);
   }
 }
