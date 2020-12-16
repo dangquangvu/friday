@@ -7,21 +7,22 @@ import { IsEnum, IsNotEmpty, IsOptional, IsString } from 'class-validator';
 
 export class CreateBlogDTO {
   @ApiProperty({
-    description: 'author id',
-    format: 'string',
-    required: true,
-  })
-  @IsString()
-  authorId: string;
-
-  @ApiProperty({
     description: 'title',
     format: 'string',
     required: true,
   })
   @IsNotEmpty()
   @IsString()
-  title: string;
+  blogTitle: string;
+
+  @ApiProperty({
+    description: 'blogImage',
+    format: 'string',
+    required: true,
+  })
+  @IsString()
+  @IsNotEmpty()
+  slug: string;
 
   @ApiProperty({
     description: 'desc',
@@ -32,13 +33,22 @@ export class CreateBlogDTO {
   desc?: string;
 
   @ApiProperty({
-    description: 'content',
+    description: 'blogText',
     format: 'string',
     required: true,
   })
   @IsString()
   @IsNotEmpty()
-  content: string;
+  blogText: string;
+
+  @ApiProperty({
+    description: 'blogImage',
+    format: 'string',
+    required: false,
+  })
+  @IsString()
+  @IsNotEmpty()
+  blogImage?: string;
 }
 
 export class BlogFilter {

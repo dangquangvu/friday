@@ -15,6 +15,16 @@ export interface User extends Document {
   created_at?: Date;
   updated_at?: Date;
 }
+export interface Blog extends Document {
+  blogCategory?: string;
+  blogTitle: string;
+  slug: string;
+  authorId: string;
+  blogImage?: String;
+  blogText: String;
+  created_at?: Date;
+  updated_at?: Date;
+}
 
 // for course
 export interface Comment extends Document {

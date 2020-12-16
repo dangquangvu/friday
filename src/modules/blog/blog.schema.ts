@@ -1,9 +1,10 @@
 import { DbModel } from 'src/shared/constants';
 import * as mongoose from 'mongoose';
+import { getStringEnumValues } from 'src/shared/helper';
 
 export const BlogSchema = new mongoose.Schema(
   {
-    title: {
+    blogTitle: {
       type: String,
       required: true,
       trim: true,
@@ -14,7 +15,25 @@ export const BlogSchema = new mongoose.Schema(
       required: false,
       trim: true,
     },
-    content: {
+    slug: {
+      type: String,
+      default: '',
+      required: true,
+      trim: true,
+    },
+    blogCategory: {
+      type: String,
+      default: '',
+      required: false,
+      trim: true,
+    },
+    blogText: {
+      type: String,
+      default: '',
+      required: true,
+      trim: true,
+    },
+    blogImage: {
       type: String,
       default: '',
       required: false,

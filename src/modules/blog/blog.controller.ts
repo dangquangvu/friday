@@ -9,8 +9,11 @@ import {
   Post,
   Put,
   Query,
+  Req,
+  UseGuards,
 } from '@nestjs/common';
-import { ApiOperation, ApiTags } from '@nestjs/swagger';
+import { ApiBearerAuth, ApiOperation, ApiTags } from '@nestjs/swagger';
+import { JwtAuthGuard } from '../auth/guard/jwt-auth.guard';
 import {
   BlogFilter,
   BlogResponse,
@@ -18,6 +21,7 @@ import {
   updateBlogDTO,
 } from './blog.dto';
 import { BlogService } from './blog.service';
+import { Request, Response } from 'express';
 @ApiTags('Blog')
 @Controller('blog')
 export class BlogController {
@@ -33,14 +37,35 @@ export class BlogController {
   @Get(':id')
   @HttpCode(HttpStatus.OK)
   @ApiOperation({ summary: 'get details blog' })
-  getDetailBlog(@Param('id') id: number): Promise<any> {
+  getDetailBlog(@Param('id') id: string): Promise<any> {
     return this.blogService.getDetailBlog(id);
   }
 
-  @Post(':id')
+  @Post('')
   @HttpCode(HttpStatus.OK)
+  @UseGuards(JwtAuthGuard)
+  @ApiBearerAuth()
   @ApiOperation({ summary: 'create blog' })
-  postBlog(@Param('id') id: number): Promise<any> {
-    return this.blogService.postBlog(id);
+  postBlog(
+    @Body() createBlogDTO: CreateBlogDTO,
+    @Req() request: Request,
+  ): Promise<any> {
+    const authHeader = request.headers.authorization;
+    const accessToken = authHeader && authHeader.split(' ')[1];
+    return this.blogService.postBlog(createBlogDTO, accessToken);
+  }
+  @Delete(':id')
+  @HttpCode(HttpStatus.OK)
+  @UseGuards(JwtAuthGuard)
+  @ApiBearerAuth()
+  @ApiOperation({ summary: 'create blog' })
+  DeleteBlog(
+    @Param('id') id: string,
+    @Body() createBlogDTO: CreateBlogDTO,
+    @Req() request: Request,
+  ): Promise<any> {
+    const authHeader = request.headers.authorization;
+    const accessToken = authHeader && authHeader.split(' ')[1];
+    return this.blogService.deleteBlog(id, accessToken);
   }
 }
