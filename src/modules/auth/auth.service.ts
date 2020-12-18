@@ -63,6 +63,7 @@ export class AuthService {
     const payload = { email: user.email, id: user._id };
 
     return {
+      id: user._id,
       fullName: user.fullName,
       email: user.email,
       accessToken: this.createAccessToken(payload),

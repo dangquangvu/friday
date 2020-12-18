@@ -43,6 +43,12 @@ export const BlogSchema = new mongoose.Schema(
       type: mongoose.SchemaTypes.ObjectId,
       ref: DbModel.USER,
     },
+    author: {
+      type: String,
+      default: '',
+      required: false,
+      trim: true,
+    },
   },
   {
     versionKey: false,

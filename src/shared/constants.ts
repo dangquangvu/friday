@@ -5,6 +5,7 @@ export const BACKEND_ROLES = ['admin', 'user'];
 export const DbModel = {
   USER: 'User',
   BLOG: 'Blog',
+  COMMENT: 'Comment',
 };
 
 export enum TransactionStatusEnum {

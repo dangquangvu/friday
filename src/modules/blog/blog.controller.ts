@@ -59,11 +59,7 @@ export class BlogController {
   @UseGuards(JwtAuthGuard)
   @ApiBearerAuth()
   @ApiOperation({ summary: 'create blog' })
-  DeleteBlog(
-    @Param('id') id: string,
-    @Body() createBlogDTO: CreateBlogDTO,
-    @Req() request: Request,
-  ): Promise<any> {
+  DeleteBlog(@Param('id') id: string, @Req() request: Request): Promise<any> {
     const authHeader = request.headers.authorization;
     const accessToken = authHeader && authHeader.split(' ')[1];
     return this.blogService.deleteBlog(id, accessToken);
